@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Our MiniStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <div class="header-content d-flex justify-content-between py-3">
+                <a href="index.html"><img src="imgs/main-logo.png" alt="logo"></a>
+                <nav>
+                    <ul class="nav d-flex align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">English</a>
+                            <ul class="dropdown-menu shadow">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            </ul>
+                        </li>
+                        <li class="mx-2"><a href="login.html"><i class="text-dark fas fa-user fa-1x"></i></a></li>
+                        <li class="mx-2"><a href="index.html"><i class="text-dark fa fa-shopping-bag fa-1x"></i></a></li>
+                    </ul>
+                </nav>
+            </div> <!-- End header content -->
+        </div> <!-- End container -->
+    </header>
+    <section class="section-form">
+        <h2>Register</h2>
+        <h6>Please fill in the fields below</h6>
+        <form>
+            <input type="text" placeholder="First-name" id="firstname">
+            <input type="text" placeholder="Last-name" id="lastname">
+            <input type="email" placeholder="E-mail" id="email">
+            <input type="password" placeholder="Password" id="password">
+            <input type="submit" value="Create account" id="create-account">
+            <small>already have an account? <a href="login.html">Log In</a></small>
+        </form>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

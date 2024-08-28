@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Our MiniStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <div class="header-content d-flex justify-content-between py-3">
+                <a href="index.html"><img src="imgs/main-logo.png" alt="logo"></a>
+                <nav>
+                    <ul class="nav d-flex align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">English</a>
+                            <ul class="dropdown-menu shadow">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            </ul>
+                        </li>
+                        <li class="mx-2"><a href="login.html"><i class="text-dark fas fa-user fa-1x"></i></a></li>
+                        <li class="mx-2"><a href="index.html"><i class="text-dark fa fa-shopping-bag fa-1x"></i></a></li>
+                    </ul>
+                </nav>
+            </div> <!-- End header content -->
+        </div> <!-- End container -->
+    </header>
+    <section class="section-form">
+        <h2>login user</h2>
+        <h6>Please enter your e-mail and password</h6>
+        <form>
+            <input type="email" placeholder="E-mail" id="email">
+            <input type="password" placeholder="Password" id="password">
+            <input type="submit" value="Login" id="log-in">
+            <small>New Customer? <a href="register.html">Create an account</a></small>
+        </form>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

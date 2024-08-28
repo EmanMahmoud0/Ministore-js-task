@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Our MiniStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <div class="header-content d-flex justify-content-between py-3">
+                <a href="index.html"><img src="imgs/main-logo.png" alt="logo"></a>
+                <nav>
+                    <ul class="nav d-flex align-items-center">
+                        <li class="nav-item fav ">
+                            <a href="#" class="btn btn-light rounded-circle" onclick="openFav()"><i class="far fa-heart"></i></a>
+                            <div class="fav-items position-absolute"></div>
+                        </li>
+                        <li class="mx-2" id="user-info"><a href="login.html" id="user"><i class="text-dark fas fa-user fa-1x"></i></a></li>
+                        <li class="mx-2 position-relative">
+                            <i class="shopping-cart text-dark fa fa-shopping-bag fa-1x" onclick="opencart()"></i>
+                            <span class="count">0</span>
+                            <div class="cart-products position-absolute">
+                                <div class="choosen-product"></div>
+                                <a class="btn btn-light" href="cartproducts.html">view all products</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!-- End header content -->
+        </div> <!-- End container -->
+    </header>
+    <main class="main d-flex align-items-center">
+        <div class="container">
+            <div class="text-content">
+                <h1 class="lh-base font-monospace">Enjoy shopping <br> in our store</h1>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <form>
+            <div class="search d-flex justify-content-evenly mt-4">
+                <input onkeyup="searchData (this.value)" type="text" placeholder="Search By Category" id="search-category">
+                <input onkeyup="searchData (this.value)" type="text" placeholder="Search By title" id="search-title">
+            </div>
+        </form>
+    </div>
+    <section class="section-form">
+        <div class="container">
+            <h1 class="font-monospace my-4">Mobile Products</h1>
+            <div class="products d-flex gap-3" id="mobiles">
+                <!-- <div class="card shadow" style="width: 18rem;">
+                    <img src="imgs/product-item1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone-11</h5>
+                        <p class="card-text">Here we can write some features about the product.</p>
+                        <div class="product-action d-flex justify-content-between">
+                            <a href="#" class="btn btn-dark">add to Cart</a>
+                            <a href="#" class="btn btn-dark"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="card shadow" style="width: 18rem;">
+                    <img src="imgs/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone-10</h5>
+                        <p class="card-text">Here we can write some features about the product.</p>
+                        <div class="product-action d-flex justify-content-between">
+                            <a href="#" class="btn btn-dark">add to Cart</a>
+                            <a href="#" class="btn btn-dark"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="imgs/product-item3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone-8</h5>
+                        <p class="card-text">Here we can write some features about the product.</p>
+                        <div class="product-action d-flex justify-content-between">
+                            <a href="#" class="btn btn-dark">add to Cart</a>
+                            <a href="#" class="btn btn-dark"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="imgs/product-item4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone-13</h5>
+                        <p class="card-text">Here we can write some features about the product.</p>
+                        <div class="product-action d-flex justify-content-between">
+                            <a href="#" class="btn btn-dark">add to Cart</a>
+                            <a href="#" class="btn btn-dark"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="section-form">
+        <div class="container">
+            <h1 class="font-monospace my-4">Smart Watches</h1>
+            <div class="products d-flex gap-3" id="watches">
+                <!-- <div class="card shadow" style="width: 18rem;">
+                    <img src="imgs/product-item6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pink watch</h5>
+                        <p class="card-text">Here we can write some features about the product.</p>
+                        <div class="product-action d-flex justify-content-between">
+                            <a href="#" class="btn btn-dark">add to Cart</a>
+                            <a href="#" class="btn btn-dark"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="card shadow" style="width: 18rem;">
+                    <img src="imgs/product-item7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Heavy watch</h5>
+                        <p class="card-text">Here we can write some features about the product.</p>
+                        <div class="product-action d-flex justify-content-between">
+                            <a href="#" class="btn btn-dark">add to Cart</a>
+                            <a href="#" class="btn btn-dark"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="imgs/product-item8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Spotted watch</h5>
+                        <p class="card-text">Here we can write some features about the product.</p>
+                        <div class="product-action d-flex justify-content-between">
+                            <a href="#" class="btn btn-dark">add to Cart</a>
+                            <a href="#" class="btn btn-dark"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="imgs/product-item9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Black watch</h5>
+                        <p class="card-text">Here we can write some features about the product.</p>
+                        <div class="product-action d-flex justify-content-between">
+                            <a href="#" class="btn btn-dark">add to Cart</a>
+                            <a href="#" class="btn btn-dark"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

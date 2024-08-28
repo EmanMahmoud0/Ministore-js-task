@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+body {
+    font-family: "Roboto Mono", monospace;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.section-form form {
+    display: flex;
+    flex-direction: column;
+    min-width: 35%;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+    /* background-color: beige; */
+}
+.section-form form input {
+    display: block;
+    margin: 7px 0;
+    padding: 12px;
+    width: 100%;
+    outline: none;
+    border: 2px solid #e7e6e6;
+    border-radius: 17px;
+}
+h2 , h6 {
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.section-form form input[type="submit"] {
+    background-color: #f8f9fa;
+    text-transform: uppercase;
+    transition: .7s;
+}
+.section-form form input[type="submit"]:hover {
+    background-color: #e7ebee;
+}
+.count {
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 50%;
+    top: -6px;
+    right: -7px;
+}
+/* Start Main section........................... */
+.main {
+    background-color: #ddd;
+    height: 100vh;
+    background-image:url(../imgs/banner-image.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:right ;
+}
+.main .text-content {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/* End Main section............................. */
+.card {
+    transition: .7s;
+}
+.card:hover {
+    transform: scale(1.09);
+}
+/* start cart .................  */
+.cart-products , .fav-items {
+    width: 200px;
+    transform: translate(-40% , 8%);
+    border: 2px solid #e7ebee;
+    padding: 15px;
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.shopping-cart {
+    cursor: pointer;
+}
+.search input {
+    outline: none;
+    width: 30%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+    .products {
+    flex-wrap: wrap;
+    }
+}
